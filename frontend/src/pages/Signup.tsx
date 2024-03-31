@@ -1,15 +1,15 @@
-import BottomWarning from "../components/bottomWarning";
-import Button from "../components/button";
+import BottomWarning from "../components/BottomWarning";
+import Button from "../components/Button";
 import Heading from "../components/Header";
-import SubHeading from "../components/subHeading";
-import InputBox from "../components/Inputbox";
+import SubHeading from "../components/SubHeading";
+import InputBox from "../components/InputBox";
 
 const Signup = () => {
   return (
     <div className="bg-slate-300 h-screen flex justify-center">
       <div>
         <div>
-          <Heading lable={"Sign up"} />
+          <Heading label={"Sign up"} />
 
           <SubHeading label={"Enter your information to create an account"} />
 
@@ -18,15 +18,15 @@ const Signup = () => {
           <InputBox placeholder="avi@gmail.com" label={"Email"} />
           <InputBox placeholder="1234" label={"Password"} />
 
-          <div>
+          <div className="mt-3">
             <Button label={"sign up"} />
           </div>
 
-          {/* <BottomWarning
+          <BottomWarning
             label={"Already have an account?"}
             buttontext={"Sign in"}
             to={"/signin"}
-          /> */}
+          />
         </div>
       </div>
     </div>
